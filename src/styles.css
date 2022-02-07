@@ -1,0 +1,52 @@
+/* You can add global styles to this file, and also import other style files */
+.techlist{
+  margin: 0;
+  padding: 0;
+}
+
+.techlist {
+  background-color:#f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 8px 13px;
+  margin-bottom: 10px;
+
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+
+.mytab{
+  overflow:hidden;
+  overflow-y: scroll;
+  max-height: 15rem;
+}
+
+
+.mytab2{
+  overflow:hidden;
+  overflow-y: scroll;
+  max-height: 38rem;
+  max-width: 90rem;
+}
+
+.mytab3{
+  /* margin-left: 0rem;
+  margin-top: 0rem; */
+  overflow:hidden;
+  overflow-y: scroll;
+  max-height: 15rem;
+  max-width: 50rem;
+}
+ .btn {
+  height: 54px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+ .bg {
+  /* background-size: cover; */
+  background-position: center;
+}
+

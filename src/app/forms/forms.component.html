@@ -1,0 +1,50 @@
+<div class="grid-container">
+  <h1 class="mat-h1">Dashboard</h1>
+  <mat-grid-list cols="2" rowHeight="340px">
+
+    <mat-grid-tile [colspan]="1" [rowspan]="2">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+          Example 1: Signup page
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content" >
+       <!-- Add contenet here -->
+       <app-signup></app-signup>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+
+
+    <mat-grid-tile [colspan]="1" [rowspan]="2">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+          Example 2: Login Page
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content" >
+       <!-- add content here  -->
+       <app-login2></app-login2>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+
+
+    <mat-grid-tile [colspan]="2" [rowspan]="4">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+          Example 3: Registeration Page
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content" >
+       <!-- add content here  -->
+       <app-registeration></app-registeration>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+
+  </mat-grid-list>
+</div>

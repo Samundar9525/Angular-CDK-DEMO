@@ -1,0 +1,21 @@
+table {
+  width: 100%;
+}
+
+th {
+  text-align: left;
+}
+
+
+
+.mytab{
+  overflow:hidden;
+  overflow-y: scroll;
+  max-height: 15rem;
+}
+.th.fixed {
+  top: 0;
+  z-index: 2;
+  position: sticky;
+  background-color: white;
+}

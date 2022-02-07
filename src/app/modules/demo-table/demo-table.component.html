@@ -1,0 +1,33 @@
+
+<div class="mytab" >
+  <table cdk-table [dataSource]="dataSource2" fixedLayout  >
+    <!-- Position Column -->
+    <ng-container cdkColumnDef="ID" >
+      <th cdk-header-cell *cdkHeaderCellDef> ID. </th>
+      <td cdk-cell *cdkCellDef="let element"> {{element.ID}} </td>
+    </ng-container>
+
+    <!-- Name Column -->
+    <ng-container cdkColumnDef="Name">
+      <th cdk-header-cell *cdkHeaderCellDef> Name </th>
+      <td cdk-cell *cdkCellDef="let element"> {{element.Name}} </td>
+    </ng-container>
+
+    <!-- Weight Column -->
+    <ng-container cdkColumnDef="Rollno">
+      <th cdk-header-cell *cdkHeaderCellDef> Roll.no </th>
+      <td cdk-cell *cdkCellDef="let element"> {{element['Roll.no']}} </td>
+    </ng-container>
+
+    <!-- Symbol Column -->
+    <ng-container cdkColumnDef="address">
+      <th cdk-header-cell *cdkHeaderCellDef> Address </th>
+      <td cdk-cell *cdkCellDef="let element"> {{element.address}} </td>
+    </ng-container>
+
+    <tr cdk-header-row *cdkHeaderRowDef="displayedColumns1"  ></tr>
+    <tr cdk-row *cdkRowDef="let row; columns: displayedColumns1;" ></tr>
+
+  </table>
+
+</div>

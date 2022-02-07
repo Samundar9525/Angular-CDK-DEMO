@@ -1,0 +1,76 @@
+<div class="grid-container">
+  <h1 class="mat-h1">Dashboard</h1>
+  <mat-grid-list cols="2" rowHeight="350px">
+    <!-- <mat-grid-tile *ngFor="let card of cards | async" [colspan]="card.cols" [rowspan]="card.rows">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            {{card.title}}
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <app-demo-table></app-demo-table>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile> -->
+
+    <mat-grid-tile [colspan]="1" [rowspan]="1">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+          Example 1: Table CDK
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content" >
+          <app-demo-table></app-demo-table>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+
+    <mat-grid-tile [colspan]="1" [rowspan]="2">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            Example 2: Drag and Drop CDk
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content" >
+          <app-demo-drag-drop></app-demo-drag-drop>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+
+
+    <mat-grid-tile [colspan]="1" [rowspan]="1">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            Example 3: Accordion CDK
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content" >
+          <app-demoanggo></app-demoanggo>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+
+    <mat-grid-tile [colspan]="2" [rowspan]="1">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            Example 4: Fully Expanded Table CDK
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content" >
+          <app-demo-table></app-demo-table>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+
+
+  </mat-grid-list>
+</div>
+
+
+
+

@@ -1,0 +1,24 @@
+<div  class="mytab3">
+  <cdk-accordion class="example-accordion">
+    <cdk-accordion-item *ngFor="let item of items; let index = index;" #accordionItem="cdkAccordionItem" class="example-accordion-item" role="button"
+      tabindex="0">
+      <div class="example-accordion-item-header" (click)="accordionItem.toggle()">
+        {{ item['Roll.no']}}
+        <span class="example-accordion-item-description">
+          {{ accordionItem.expanded ? '△' : '▽' }}
+        </span>
+      </div>
+
+      <div
+        class="example-accordion-item-body" role="button" [style.display]="accordionItem.expanded ? '' : 'none'">
+       <p  >Name :{{item.Name}}
+         <span style="padding-left: 3em;"> Stream: {{item.Stream}} </span>
+          <span style="padding-left: 3em;">10th: {{item.marks['10th']}} </span>
+          <span style="padding-left: 3em;">12th: {{item.marks['12th']}} </span>
+          <span style="padding-left: 3em;">graduation: {{item.marks['graduation']}} </span>
+          <span style="padding-left: 3em;">post-graduation: {{item.marks['post-graduation']}} </span>  </p>
+      </div>
+    </cdk-accordion-item>
+  </cdk-accordion>
+
+</div>
